@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { BankComponent } from './bank/bank.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BankComponent
+    BankComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
