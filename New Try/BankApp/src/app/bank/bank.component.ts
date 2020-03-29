@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Interaction} from '../models/interaction';
 
 @Component({
   selector: 'app-bank',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BankComponent implements OnInit {
 
-  constructor() { }
+  interaction: Interaction;
+
+  constructor()
+  {
+    this.interaction = new Interaction();
+  }
 
   ngOnInit(): void {
   }
