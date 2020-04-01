@@ -1,0 +1,11 @@
+<div fxLayoutAlign="center center" fxLayout="column">
+  <p>Pankkisovellus Pasaati</p>
+</div>
+
+<div id="login">
+  <input matInput type="text"[(ngModel)]="account" placeholder="Account number">
+  <input matInput type="password" [(ngModel)]="password" placeholder="password">
+
+  <button mat-raised-button routerLink="/bank">Kirjaudu</button>
+
+</div>

@@ -6,19 +6,39 @@ import { AppComponent } from './app.component';
 import { BankComponent } from './bank/bank.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
+import { LoginComponent } from './login/login.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import {InteractionService} from './services/interaction.service';
+import {InteractionHttpService} from './services/interaction-http.service';
+import {FormsModule} from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BankComponent
+    BankComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule,
+    MatInputModule,
+    FlexLayoutModule,
+    MatSidenavModule,
+    MatProgressSpinnerModule,
+    HttpClientModule,
+
   ],
-  providers: [],
+  providers: [
+    InteractionService,
+    InteractionHttpService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

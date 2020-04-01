@@ -1,1 +1,16 @@
-<p>bank works!</p>
+<div>
+  <div>
+    <form>
+      <input matInput type="text" maxlength="50" label="sender" [(ngModel)]="this.interaction.InvoiceSender">
+      <input matInput type="text" maxlength="50" label="recipient" [(ngModel)]="this.interaction.RecipientName">
+      <input matInput type="text" maxlength="18" label="IBAN" [(ngModel)]="this.interaction.RecipientIBAN">
+      <input matInput type="text" maxlength="20" label="refNumber" [(ngModel)]="this.interaction.Refrence">
+      <input matInput type="text" maxlength="10" label="invoiceNum" [(ngModel)]="this.interaction.InvoiceNumber">
+      <input matInput type="text" maxlength="8" label="BIC" [(ngModel)]="this.interaction.BIC">
+      <input matInput type="number" label="total" [(ngModel)]="this.interaction.Total">
+      <input matInput type="date" label="dueDate" [(ngModel)]="this.interaction.DueDay">
+    </form>
+  </div>
+
+
+</div>
